@@ -11,7 +11,7 @@ def get_emoji(dish_name):
     str
         a emoji related to the input dish
     """
-    # Main dishes that contain meat
+    # Main dishes
     if "chicken" in dish_name:
         return "🐓"
     if "beef" in dish_name:
@@ -28,19 +28,25 @@ def get_emoji(dish_name):
         return "🍚"
     if "pho" in dish_name or "noodle" in dish_name or "noodles" in dish_name:
         return "🍜"
+    if "omelette" in dish_name:
+        return "🍳"
     # Main dishes that contain veg
-    if "broccoli" in dish_name:
+    if "broccoli" in dish_name or "califlower" in dish_name:
         return "🥦"
-    if "bok choy" in dish_name:
+    if "bok choy" in dish_name or "spinach" in dish_name or "asparagus" in dish_name:
         return "🥬"
+    if "carrot" in dish_name:
+        return "🥕"
     if "mushroom" in dish_name or "shiitake" in dish_name:
         return "🍄"
     # Fast food
-    if "fries" in dish_name or "chip" in dish_name:
+    if "toast" in dish_name:
+        return "🍞"
+    if "fries" in dish_name or "chip" in dish_name or "tot" in dish_name or "hash" in dish_name:
         return "🍟"
-    if "egg" in dish_name and not "eggplant" in dish_name:
+    if "scramble" in dish_name or "egg" in dish_name and not "eggplant" in dish_name:
         return "🍳"
-    if "hot dog" in dish_name or "sausages" in dish_name or "brat" in dish_name:
+    if "dog" in dish_name or "sausage" in dish_name or "brat" in dish_name:
         return "🌭"
     if "burger" in dish_name or "cheeseburger" in dish_name:
         return "🍔"
@@ -61,8 +67,6 @@ def get_emoji(dish_name):
         return "🎃"
     if "corn" in dish_name:
         return "🌽"
-    if "tomato" in dish_name:
-        return "🍅"
     if "onion" in dish_name:
         return "🧅"
     if "potato" in dish_name:
@@ -73,6 +77,8 @@ def get_emoji(dish_name):
         return "🥒"
     if "eggplant" in dish_name:
         return "🍆"
+    if "tomato" in dish_name:
+        return "🍅"
     if "pretzels" in dish_name:
         return "🥨"
 

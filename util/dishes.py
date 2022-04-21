@@ -1,6 +1,6 @@
-from dis import dis
 import requests
 import json
+from util import emojis
 
 def get_dishes(hall_num):
     STATION_DATA = {1445: ["comforts", "American grill"],
@@ -26,7 +26,7 @@ def get_dishes(hall_num):
         for dish_id in dishes:
             if dishes_data[dish_id]['special'] == 1:
                 dishes_name = dishes_data[dish_id]['label']
-                output[time] = output.get(time, '') + dishes_name + "\n"
+                output[time] = output.get(time, '') +  emojis.get_emoji(dishes_name.lower()) + " " + dishes_name.title() + "\n"
 
     return output
 
