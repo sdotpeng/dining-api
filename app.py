@@ -44,7 +44,6 @@ def dishes():
 
 @app.route('/')
 def index():
-    # A welcome message to test our server
     return "<h1>Welcome to API for Colby Dining!</h1>"
 
 
