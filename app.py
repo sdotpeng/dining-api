@@ -44,7 +44,7 @@ def dishes():
 
 @app.route('/')
 def index():
-    return "<h1>Welcome to API for Colby ba bab Dining!</h1>"
+    return "<h1>Welcome to API for Colby ba bab  Dining!</h1>"
 
 
 if __name__ == '__main__':
