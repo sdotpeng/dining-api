@@ -31,7 +31,7 @@ def get_emoji(dish_name):
     if "omelette" in dish_name:
         return "🍳"
     # Main dishes that contain veg
-    if "broccoli" in dish_name or "califlower" in dish_name:
+    if "broccoli" in dish_name or "cauliflower" in dish_name:
         return "🥦"
     if "bok choy" in dish_name or "spinach" in dish_name or "asparagus" in dish_name:
         return "🥬"
